@@ -1,8 +1,6 @@
 package 第一學期;
-
-import java.util.Scanner;
-
-public class Ex01 {
+import java.util.*;
+public class Ex36 {
 
 	/**
 	 * @param args
@@ -10,13 +8,13 @@ public class Ex01 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner scn = new Scanner(System.in);
-		long n = scn.nextLong();
-		long sum =0;
-		while(n>0){
-			sum=sum+n%10;
-			n=n/10;
-			
-		}System.out.println(sum);
+		int  sum = 1;
+		int  a = scn.nextInt();
+		int i = 1;
+		while(i<=a){
+			sum=sum*i;
+					i++;
+		}System.out.print(sum);
 	}
 
 }
