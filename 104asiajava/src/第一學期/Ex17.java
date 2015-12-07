@@ -21,10 +21,19 @@ public class Ex17 {
 				for (int j = c; j >= 1; j--) {
 					if (c % j == 0 && min % j == 0) {
 						max = j;
-						System.out.print("程そ计:"+(min * c / max));
+						System.out.print("程そ计:" + (min * c / max));
+						break;
+					}
+					if (a == b && b == c) {
 						break;
 					}
 				}
+				if (a == b && b == c) {
+					break;
+				}
+			}
+			if (a == b && b == c) {
+				break;
 			}
 		}
 	}
