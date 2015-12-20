@@ -10,6 +10,7 @@ public class fun3 {
 		Scanner scn = new Scanner(System.in);
 		int x = scn.nextInt();
 		int y = scn.nextInt();
+		int z=scn.nextInt();
 		System.out.print(lcm(x, y));
 	}
 
