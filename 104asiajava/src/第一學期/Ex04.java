@@ -14,7 +14,7 @@ public class Ex04 {
 		int i = 0;
 		boolean flag = false;
 		while (i < 6) {
-			data[i] = (rnd.nextInt(41) + 1);
+			data[i] = (rnd.nextInt(42) + 1);
 			flag = false;
 			for (int j = 0; j < i; j++) {
 				if (data[i] == data[j]) {
