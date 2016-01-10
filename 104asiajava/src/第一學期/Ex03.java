@@ -10,62 +10,75 @@ public class Ex03 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner scn = new Scanner(System.in);
-		System.out.print("請輸入發票號碼:");
-		char[] arry1 = { 0, 1, 2, 7, 2, 6, 3, 6 };
-		char[] arry2 = { 3, 9, 4, 1, 2, 2, 0, 1 };
-		char[] arry3 = { 9, 4, 5, 8, 6, 3, 5, 6 };
-		String str = scn.nextLine();
-		char[] ch_array = str.toCharArray();
-		for (int i = 0; i < 8; i++) {
-			if ((ch_array[0] == '0' && ch_array[1] == '1' && ch_array[2] == '2' && ch_array[3] == '7'
-					&& ch_array[4] == '2' && ch_array[5] == '6' && ch_array[6] == '3' && ch_array[7] == '6')
-					|| (ch_array[0] == '3' && ch_array[1] == '9' && ch_array[2] == '4' && ch_array[3] == '1'
-							&& ch_array[4] == '2' && ch_array[5] == '2' && ch_array[6] == '0' && ch_array[7] == '1')
-					|| (ch_array[0] == '9' && ch_array[1] == '4' && ch_array[2] == '5' && ch_array[3] == '8'
-							&& ch_array[4] == '6' && ch_array[5] == '3' && ch_array[6] == '5' && ch_array[7] == '6')) {
-				System.out.print("你贏了200000元");
+		int[] prize1 = { 0, 1, 2, 7, 2, 6, 3, 6 };
+		int[] prize2 = { 3, 9, 4, 1, 2, 2, 0, 1 };
+		int[] prize3 = { 9, 4, 5, 8, 6, 3, 5, 6 };
+		String name = scn.next();
+		char ch[] = name.toCharArray();
+		int numbers[] = new int[ch.length];
+		int j, a = 0, b = 0, c = 0, yn = 0;
+		for (int i = 0; i < ch.length; i++) {
+			numbers[i] = (ch[i] - '0');
+		}
+		for (j = 7; j >= 0; j--) {
+			if (numbers[j] == prize1[j]) {
+				a = a + 1;
+			} else {
 				break;
 			}
-			if ((ch_array[1] == '1' && ch_array[2] == '2' && ch_array[3] == '7' && ch_array[4] == '2'
-					&& ch_array[5] == '6' && ch_array[6] == '3' && ch_array[7] == '6')
-					|| (ch_array[1] == '9' && ch_array[2] == '4' && ch_array[3] == '1' && ch_array[4] == '2'
-							&& ch_array[5] == '2' && ch_array[6] == '0' && ch_array[7] == '1')
-					|| (ch_array[1] == '4' && ch_array[2] == '5' && ch_array[3] == '8' && ch_array[4] == '6'
-							&& ch_array[5] == '3' && ch_array[6] == '5' && ch_array[7] == '6')) {
-				System.out.print("你贏了40000元");
+		}
+		for (j = 7; j >= 0; j--) {
+			if (numbers[j] == prize2[j]) {
+				b = b + 1;
+			} else {
 				break;
 			}
-			if ((ch_array[2] == '2' && ch_array[3] == '7' && ch_array[4] == '2' && ch_array[5] == '6'
-					&& ch_array[6] == '3' && ch_array[7] == '6')
-					|| (ch_array[2] == '4' && ch_array[3] == '1' && ch_array[4] == '2' && ch_array[5] == '2'
-							&& ch_array[6] == '0' && ch_array[7] == '1')
-					|| (ch_array[2] == '5' && ch_array[3] == '8' && ch_array[4] == '6' && ch_array[5] == '3'
-							&& ch_array[6] == '5' && ch_array[7] == '6')) {
-				System.out.print("你贏了10000元");
+		}
+		for (j = 7; j >= 0; j--) {
+			if (numbers[j] == prize3[j]) {
+				c = c + 1;
+			} else {
 				break;
 			}
-			if ((ch_array[3] == '7' && ch_array[4] == '2' && ch_array[5] == '6' && ch_array[6] == '3'
-					&& ch_array[7] == '6')
-					|| (ch_array[3] == '1' && ch_array[4] == '2' && ch_array[5] == '2' && ch_array[6] == '0'
-							&& ch_array[7] == '1')
-					|| (ch_array[3] == '8' && ch_array[4] == '6' && ch_array[5] == '3' && ch_array[6] == '5'
-							&& ch_array[7] == '6')) {
-				System.out.print("你贏了4000元");
-				break;
-			}
-			if ((ch_array[4] == '2' && ch_array[5] == '6' && ch_array[6] == '3' && ch_array[7] == '6')
-					|| (ch_array[4] == '2' && ch_array[5] == '2' && ch_array[6] == '0' && ch_array[7] == '1')
-					|| (ch_array[4] == '6' && ch_array[5] == '3' && ch_array[6] == '5' && ch_array[7] == '6')) {
-				System.out.print("你贏了1000元");
-				break;
+		}
+		if (a >= 3) {
+			yn = a;
+		}
+		if (b >= 3) {
+			yn = b;
+		}
+		if (c >= 3) {
+			yn = c;
+		}
 
-			}
-			if ((ch_array[5] == '6' && ch_array[6] == '3' && ch_array[7] == '6')
-					|| (ch_array[5] == '2' && ch_array[6] == '0' && ch_array[7] == '1')
-					|| (ch_array[5] == '3' && ch_array[6] == '5' && ch_array[7] == '6')) {
-				System.out.print("你贏了200元");
-				break;
-			}
+		switch (yn) {
+		case 0:
+			System.out.println("0");
+			break;
+		case 1:
+			System.out.println("0");
+			break;
+		case 2:
+			System.out.println("0");
+			break;
+		case 3:
+			System.out.println("200");
+			break;
+		case 4:
+			System.out.println("1000");
+			break;
+		case 5:
+			System.out.println("4000");
+			break;
+		case 6:
+			System.out.println("10000");
+			break;
+		case 7:
+			System.out.println("40000");
+			break;
+		case 8:
+			System.out.println("200000");
+			break;
 		}
 	}
 }

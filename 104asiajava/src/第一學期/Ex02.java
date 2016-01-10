@@ -8,7 +8,6 @@ public class Ex02 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
      Scanner scn = new Scanner(System.in);
-     System.out.print("½Ð¿é¤J¤@¦ê¦r:");
 		String str = scn.nextLine();
 		char[] c = str.toCharArray();
 		for (int i = str.length() - 1; i >= 0; i--) {

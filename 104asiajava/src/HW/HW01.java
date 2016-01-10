@@ -20,8 +20,8 @@ public class HW01 {
 		char ch[] = name.toCharArray();
 		int numbers[] = new int[ch.length];
 		int j, a = 0, b = 0, c = 0, yn = 0;
-		for (int i = 1; i < ch.length; i++) {
-			numbers[i] = Integer.valueOf(ch[i] - '0');
+		for (int i = 0; i < ch.length; i++) {
+			numbers[i] = (ch[i] - '0');
 		}
 		for (j = 7; j >= 0; j--) {
 			if (numbers[j] == prize1[j]) {
