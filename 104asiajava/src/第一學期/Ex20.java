@@ -14,7 +14,7 @@ public class Ex20 {
 		char[] ch_array = n.toCharArray();
 		for (int i = 0; i < ch_array.length; i++) {
 			int number = ch_array[i] - '0';
-			System.out.print(number+" ");
+			System.out.println(number+" ");
 			}
 	}
 

@@ -3,21 +3,15 @@ package 第一學期;
 import java.util.Scanner;
 
 public class Ex13 {
-	public static void main(String[] args) {
-	Scanner scn = new Scanner(System.in);
-	System.out.print("請輸入邊長:");
-	int n = scn.nextInt();
-	System.out.print("請輸入字元:");
-	char c = scn.next().charAt(0);
-	square(n,c);
-}
-	private  static  void square(int n, char c) {
-		// TODO Auto-generated method stub
+	public static void main(String args[]) {
+		Scanner scn = new Scanner(System.in);
+		char c = scn.next().charAt(0);
+		int n = scn.nextInt();
 		for (int i = n; i > 0; i--) {
-			for (int j = n; j > 1; j--) {
+			for (int j = n; j > 0; j--) {
 				System.out.print(c);
 			}
-			System.out.println(c);
+			System.out.println();
 		}
 	}
 }

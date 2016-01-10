@@ -11,7 +11,8 @@ public class Ex04 {
 		// TODO Auto-generated method stub
 		Scanner scn =new Scanner(System.in); 
 		Random randnum = new Random();
-		randnum.setSeed(2232356);
+		int a = scn.nextInt();
+		randnum.setSeed(a);
 		int data[] = new int[6];
 		int i = 0;
 		boolean flag = false;
@@ -29,7 +30,7 @@ public class Ex04 {
 			}
 		}
 		for (i = 0; i < 6; i++) {
-			System.out.println(data[i]);
+			System.out.print(data[i]+"\t");
 		}
 	}
 }
