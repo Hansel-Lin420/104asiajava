@@ -6,16 +6,23 @@ public class Ex20 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner scn = new Scanner(System.in);
-		String n = scn.nextLine();
-		decomp(n);
-	}
-	private  static  void decomp(String n){
-		char[] ch_array = n.toCharArray();
-		for (int i = 0; i < ch_array.length; i++) {
-			int number = ch_array[i] - '0';
-			System.out.println(number+" ");
-			}
-	}
-
-}
+		String test;
+		System.out.print("¿é¤J¤@¦ê¼Æ¦r:");
+		Scanner scanner = new Scanner(System.in);
+		test = scanner.next();
+		int i=Integer.parseInt(test);
+		System.out.print("decomp("+test+"):"+decomp(test));
+		}
+		public static String decomp(String m)
+		{
+		String[] names=m.split("");
+		String x="";
+		for(int i=0;i<m.length();i++)
+		{
+		x=x+names[i];
+		x=x+" ";
+		}
+		m=x;
+		return m;
+		}
+		}
