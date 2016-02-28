@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class score {
+public class score1 {
 
 	/**
 	 * @param args
