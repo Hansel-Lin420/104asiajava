@@ -2,6 +2,7 @@ package Class;
 
 import java.util.*;
 
+
 public class Ex20160302 {
 
 	/**
@@ -12,6 +13,7 @@ public class Ex20160302 {
 		Scanner scn = new Scanner(System.in);
 		ArrayList<Teacher> teacher = new ArrayList<Teacher>();
 		ArrayList<Course> course = new ArrayList<Course>();
+		ArrayList<student>  student= new ArrayList<student>();
 		while (true) {
 			System.out.println("1)Add, 2)delete, 3)Show info, 4)stop:");
 
@@ -30,6 +32,10 @@ public class Ex20160302 {
 					System.out.println("course name ,course id ,teacher:");
 					course.add(new Course(scn.next(), scn.next(), scn.next()));
 					break;
+				}
+				if (str.equals("3")) {
+					System.out.println("course name ,course id ,teacher:");
+					student.add(new student(scn.next(), scn.next(), scn.next()));
 				}
 			case 2:
 
@@ -85,9 +91,19 @@ public class Ex20160302 {
 				if (teacher.size() == 0) {
 					System.out.println("no info");
 				}
+				if (student.size() > 0) {
+					if (student.size() > 0) {
+						for (student i : student) {
+							i.showAll();
+						}
+					}
+					if (student.size() == 0) {
+						System.out.println("no info");
+					}
 
 			}
 
 		}
 	}
 }
+	}

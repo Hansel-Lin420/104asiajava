@@ -3,11 +3,9 @@ package Class;
 import java.util.*;
 
 public class Course {
-	ArrayList<Teacher> teacher1 = new ArrayList<Teacher>();
+
 	private String name, id, teacher;
 
-	public Course() {
-	}
 
 	public Course(String name1, String id1, String teacher1) {
 		Scanner scn = new Scanner(System.in);

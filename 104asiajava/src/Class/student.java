@@ -1,15 +1,14 @@
 package Class;
 
-
-public class Teacher {
+public class student {
 	private String name;
 	private String id;
 	private String dept;
 	
 
-	public Teacher() {
+	public student() {
 	}
-	public Teacher(String name1, String id1, String dept1) {
+	public student(String name1, String id1, String dept1) {
 		name = name1;
 		id = id1;
 		dept = dept1;
@@ -47,3 +46,4 @@ public class Teacher {
 		System.out.println("-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- ");
 	}
 }
+		
