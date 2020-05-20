@@ -13,7 +13,7 @@ public class Ex03 {
 		int[] prize1 = { 0, 1, 2, 7, 2, 6, 3, 6 };
 		int[] prize2 = { 3, 9, 4, 1, 2, 2, 0, 1 };
 		int[] prize3 = { 9, 4, 5, 8, 6, 3, 5, 6 };
-		String name = scn.next();
+		String name = scn.nextLine();
 		char ch[] = name.toCharArray();
 		int numbers[] = new int[ch.length];
 		int j, a = 0, b = 0, c = 0, yn = 0;
